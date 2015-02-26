@@ -1,25 +1,24 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Como publicar en jekyll"
 date:   2015-02-24 20:21:31
 categories: jekyll update
----
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+ Primero es iniciar git( git init) con tu repositorio creado. Usar git status para ver
+ todos los elementos que contiene tu proyecto de jekyll, y hacer git add para añadir al
+ repositorio los que te interesa tener (se puede hacer todo en una linea "git add file1 
+ file2 file3 ...). Luego configuras:
+ [razvan@acer-f16 RazBlog]$ git config user.name "Razvan Puscas"
+[razvan@acer-f16 RazBlog]$ git config user.email "rpuscas94@gmail.com"
+[razvan@acer-f16 RazBlog]$ git config --global user.email "rpuscas94@gmail.com"
+[razvan@acer-f16 RazBlog]$ git config --global user.name "Razvan Puscas"
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+Haces un primer commit( git commit) y en el fichero que abren puedes escribir arriba el 
+mensaje que quieras.
+Usas el comando (git remote add origin https://github.com/rpuscas/rpuscas.github.io.git
+ ) para hacer una copia en remoto de tu origin del repositorio.
+Hacer un push al origin del branch(rama) "master" (git push -u origin master).
 
-Jekyll also offers powerful support for code snippets:
+Para hacer posts al blog => cd posts
+y abres el fichero con => vim nombre-fichero
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll’s dedicated Help repository][jekyll-help].
-
-[jekyll]:      http://jekyllrb.com
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-help]: https://github.com/jekyll/jekyll-help
+Una vez modificado haces git commit nombre-fichero y haces el git push.
