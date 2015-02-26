@@ -3,6 +3,7 @@ layout: post
 title:  "Como publicar en jekyll"
 date:   2015-02-24 20:21:31
 categories: jekyll update
+---
  Primero es iniciar git( git init) con tu repositorio creado. Usar git status para ver
  todos los elementos que contiene tu proyecto de jekyll, y hacer git add para añadir al
  repositorio los que te interesa tener (se puede hacer todo en una linea "git add file1 
