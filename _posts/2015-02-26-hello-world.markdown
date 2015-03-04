@@ -7,3 +7,4 @@ categories: jekyll update
 
 Hello world, I'm Razvan.
 Se podra directamente desde github???
+Siii!!! Se puede editar directamente desde github.
