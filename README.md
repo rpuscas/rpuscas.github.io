@@ -1,35 +1,24 @@
-#Thinny - The Infinite's Nymphet
+#Clean Blog by Start Bootstrap - Jekyll Version
 
+The official Jekyll version of the Clean Blog theme by [Start Bootstrap](http://startbootstrap.com/).
 
-----
+###[View Live Demo &rarr;](http://ironsummitmedia.github.io/startbootstrap-clean-blog-jekyll/)
 
-###Attention
+## Before You Begin
 
-I'm no longer maintaining this repository.
+In the _config.yml file, the base URL is set to /startbootstrap-clean-blog-jekyll which is this themes gh-pages preview. It's recommended that you remove the base URL before working with this theme locally!
 
-If you want to add something, feel free to send a pull request, which I'll see if it's okay and merge.
+It should look like this:
+`baseurl: ""`
 
-----
+## What's Included
 
-##Installation
-1. Clone the repo: `git clone https://github.com/camporez/Thinny.git Thinny`
-2. Open the folder: `cd Thinny`
-3. Install the dependencies: `bundle install`
-4. Build the website: `bundle exec jekyll serve`
+A full Jekyll environment is included with this theme. If you have Jekyll installed, simply run `jekyll serve` in your command line and preview the build in your browser. You can use `jekyll serve --watch` to watch for changes in the source files as well.
 
-##About
-Thinny is a beautiful theme for [Jekyll](http://jekyllrb.com/).
+A Grunt environment is also included. There are a number of tasks it performs like minification of the JavaScript, compiling of the LESS files, adding banners to keep the Apache 2.0 license intact, and watching for changes. Run the grunt default task by entering `grunt` into your command line which will build the files. You can use `grunt watch` if you are working on the JavaScript or the LESS.
 
-(if you're looking for the [Ghost](http://ghost.org) release of the theme, check [this page](https://github.com/camporez/Thinny/releases/tag/v0.3-alexandra))
+You can run `jekyll serve --watch` and `grunt watch` at the same time to watch for changes and then build them all at once.
 
-##Demo
-[![Preview image](https://f.cloud.github.com/assets/5755892/2002329/bdb5a052-85ed-11e3-8e00-a892910b6917.png)](http://camporez.com/)
-The above image is a preview of how the post header looks on Thinny.
+## Support
 
-A live demo is available [on my personal blog](http://camporez.com/).
-
-##More information
-Read the blog post [here](http://camporez.com/blog/thinny-2/).
-
-##Reporting issues
-You can report an issue or request a feature [here](http://github.com/camporez/Thinny/issues) or on [twitter](http://twitter.com/iancamporez).
+Visit Clean Blog's template overview page on Start Bootstrap at http://startbootstrap.com/template-overviews/clean-blog/ and leave a comment, email feedback@startbootstrap.com, or open an issue here on GitHub for support.
