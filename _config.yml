@@ -1,7 +1,7 @@
-name: Long Haul
-description: Long Form Jekyll theme built with SASS / COMPASS / SUSY
+name: El blog del Kohai
+description: 
 
-url: http://brianmaierjr.github.com/long-haul
+url: http://rpuscas.github.io/
 paginate_path: "blog/page:num/"
 permalink: blog/:title/
 
