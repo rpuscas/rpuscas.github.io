@@ -6,7 +6,7 @@ title: Contact Long Haul
 <div id="contact">
   <h1 class="pageTitle">Contact Me</h1>
   
-  <form action="http://formspree.io/your@mail.com">
+  <form action="http://formspree.io/rpuscas94@gmail.com" method="post">
     <label for="name">Name</label>    
     <input type="text" id="name" name="name" class="full-width"><br>
     <label for="email">Email Address</label>
