@@ -5,7 +5,7 @@ const gameOverScreen = document.getElementById('gameOverScreen');
 const nextPageBtn = document.getElementById('nextPageBtn');
 
 const birdImg = new Image();
-birdImg.src = 'images/bird.png';
+birdImg.src = 'images/bird3.png';
 
 const birdDeadImg = new Image();
 birdDeadImg.src = 'images/bird-dead.png';
@@ -27,7 +27,7 @@ let animationFrameId;
 let imageSwitched = false;
 
 let pipeWidth = 60;
-let pipeGap = 280;
+let pipeGap = 290;
 const maxScore = 15;
 
 function initGame() {

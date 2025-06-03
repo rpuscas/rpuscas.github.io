@@ -20,7 +20,7 @@ body {
 }
 
 .video-container {
-  margin: 20px 0;
+  margin: 80px 0;
 }
 
 .inputs {
@@ -381,7 +381,7 @@ input, select, textarea {
 		}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #353865;
+		color: rgba(255, 255, 255, 0.875);
 		font-family: Arial, Helvetica, sans-serif;
 		font-weight: 700;
 		line-height: 1.3;

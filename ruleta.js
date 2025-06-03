@@ -9,7 +9,7 @@ spinBtn.addEventListener("click", () => {
 
   let index = 0;
   let totalCycles = 30; // número de cambios totales
-  let delay = 100;
+  let delay = 120;
 
   function spin() {
     display.textContent = values[index % values.length];
