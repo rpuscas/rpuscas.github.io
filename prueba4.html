@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<!--
+	Ethereal by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+  <title>Music</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/canciones.css" />
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+
+
+
+  <div class="panel color1 span-3-75 canciones">
+    <!-- Wrapper -->
+    <div class="container">
+      <!-- Puedes usar YouTube o Drive aquí -->
+      <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/JVM9GiCOnnA?si=aphjUZwt0MqpZ9Xw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+
+      <div class="inputs">
+        <div class="input-group">
+          <input type="text" id="input1" placeholder="Respuesta 1" />
+          <button onclick="checkAnswer(1)" class="button primary color2">Comprobar</button>
+          <span id="check1" class="checkmark hidden">✅</span>
+          <span id="wrong1" class="wrongmark hidden">❌</span>
+        </div>
+
+        <div class="input-group">
+          <input type="text" id="input2" placeholder="Respuesta 2" />
+          <button onclick="checkAnswer(2)" class="button primary color2">Comprobar</button>
+          <span id="check2" class="checkmark hidden">✅</span>
+          <span id="wrong2" class="wrongmark hidden">❌</span>
+        </div>
+
+        <div class="input-group">
+          <input type="text" id="input3" placeholder="Respuesta 3" />
+          <button onclick="checkAnswer(3)" class="button primary color2">Comprobar</button>
+          <span id="check3" class="checkmark hidden">✅</span>
+          <span id="wrong3" class="wrongmark hidden">❌</span>
+        </div>
+      </div>
+
+      <div id="success-message" class="hidden">
+        <h2>🎉 ¡Enhorabuena! Ya estás lista para tu regalo :)</h2>
+        <button onclick="window.location.href='ruleta.html'" class="button primary color2">Siguiente</button>
+      </div>
+    </div>
+  </div>
+
+<!-- Scripts -->
+<script src="canciones.js"></script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

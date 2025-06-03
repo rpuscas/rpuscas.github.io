@@ -1,26 +1,43 @@
----
-layout: default
-title: Long Haul - A Minimal, Long Form Jekyll Theme
----
+<!DOCTYPE HTML>
+<!--
+	Ethereal by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Happy Birthday🎉</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
 
-      <div id="home">
-        <h1 class="pageTitle">Recent Posts</h1>
-        <ul class="posts noList">
-          {% for post in paginator.posts %}
-            <li>
-            	<span class="date">{{ post.date | date: '%B %d, %Y' }}</span>
-            	<h3><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h3>
-            	<p class="description">{% if post.description %}{{ post.description  | strip_html | strip_newlines | truncate: 250 }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 250 }}{% endif %}</p>
-            </li>
-          {% endfor %}
-        </ul>
-        <!-- Pagination links -->
-        <div class="pagination">
-          {% if paginator.previous_page %}
-            <a href="{{ site.url }}{{ paginator.previous_page_path }}" class="previous button__outline">Newer Posts</a>  
-          {% endif %} 
-          {% if paginator.next_page %}
-            <a href="{{ site.url }}{{ paginator.next_page_path }}" class="next button__outline">Older Posts</a>
-          {% endif %}
-        </div>
-      </div>
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Wrapper -->
+					<div id="wrapper" style="margin: 0 auto;">
+
+						<!-- Panel (Banner) -->
+							<section class="panel banner right">
+								<div class="content color0 span-3-75">
+									<h1 class="major">Feliz Cumpleaños Bebesinchii 🎉</h1>
+									<p>¿No pensarías que iba a ser tan fácil no? Para obtener tu regalo deberás enfrentarte a cuatro extremadamente exigentes desafíos. Tus habilidades serán puestas a prueba, pero las recompensas obtenidas superarán con creces los límites de la imaginación. O igual no, pero será divertido :)</p>
+									<button onclick="window.location.href='prueba1.html'" class="button primary color2">Dame caña</button>
+								</div>
+							</section>
+
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
