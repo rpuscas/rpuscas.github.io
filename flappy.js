@@ -5,7 +5,7 @@ const gameOverScreen = document.getElementById('gameOverScreen');
 const nextPageBtn = document.getElementById('nextPageBtn');
 
 const birdImg = new Image();
-birdImg.src = 'images/bird3.png';
+birdImg.src = 'images/bird4.png';
 
 const birdDeadImg = new Image();
 birdDeadImg.src = 'images/bird-dead.png';
