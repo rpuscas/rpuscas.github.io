@@ -18,7 +18,15 @@
 <div id="page-wrapper">
 
 	<!-- Wrapper -->
-	<button id="startBtn" class="button primary color2 boton-flappy">Iniciar Juego</button>
+	<div id="configButtons" style="margin: 0 auto;">
+		<div style="margin: 0 auto;">
+			<label for="scoreInput" style="color: #e37b7c;">Elige puntuación máxima (Por defecto 15):</label>
+			<input type="number" id="scoreInput" min="1" style="margin: 0 0 20px 0; color: #e37b7c; border: solid 2px #e37b7c"/>
+		</div>
+		<button id="modo1" class="button primary color2 boton-flappy">Modo lento</button>
+		<button id="modo2" class="button primary color2 boton-flappy">Modo medio</button>
+		<button id="modo3" class="button primary color2 boton-flappy">Modo rápido</button>
+	</div>
 	<canvas id="gameCanvas" class="content color0 span-3-75 canvas-flappy" width="1200" height="800" style="display:none;"></canvas>
 
 	<div id="gameOverScreen" class="gameover-flappy" style="display: none;">

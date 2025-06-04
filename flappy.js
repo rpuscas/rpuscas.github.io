@@ -3,6 +3,11 @@ const ctx = canvas.getContext('2d');
 const startBtn = document.getElementById('startBtn');
 const gameOverScreen = document.getElementById('gameOverScreen');
 const nextPageBtn = document.getElementById('nextPageBtn');
+const modo1Btn = document.getElementById('modo1');
+const modo2Btn = document.getElementById('modo2');
+const modo3Btn = document.getElementById('modo3');
+const configButtons = document.getElementById('configButtons');
+const scoreInput = document.getElementById('scoreInput');
 
 const birdImg = new Image();
 birdImg.src = 'images/bird4.png';
@@ -28,17 +33,24 @@ let imageSwitched = false;
 
 let pipeWidth = 60;
 let pipeGap = 290;
-const maxScore = 15;
+let maxScore = 15;
+
+let gameConfig = {
+  gravity: 0.25,
+  lift: -7,
+  pipeSpeed: 2,
+  pipeGap: 290
+};
 
 function initGame() {
   bird = {
     x: 120,
     y: 300,
-    radius: 40, // visual radius
-    collisionRadius: 30, // 75% for collision
+    radius: 40,
+    collisionRadius: 30,
     velocity: 0,
-    gravity: 0.25,
-    lift: -7
+    gravity: gameConfig.gravity,
+    lift: gameConfig.lift
   };
 
   pipes = [];
@@ -52,7 +64,7 @@ function initGame() {
 
   canvas.style.display = 'block';
   gameOverScreen.style.display = 'none';
-  startBtn.style.display = 'none';
+  configButtons.style.display = 'none'; // Oculta los botones de config
 }
 
 function drawBird() {
@@ -74,12 +86,12 @@ function drawPipes() {
 }
 
 function updatePipes() {
-  if (frame % 140 === 0) {
+  if (frame % gameConfig.pipeFrameRate === 0) {
     let top = Math.random() * 300 + 100;
     pipes.push({ x: canvas.width, top: top });
   }
 
-  pipes.forEach(pipe => pipe.x -= 2);
+  pipes.forEach(pipe => pipe.x -= gameConfig.pipeSpeed);
 
   if (pipes.length && pipes[0].x < -pipeWidth) {
     pipes.shift();
@@ -192,11 +204,36 @@ canvas.addEventListener('click', () => {
   }
 });
 
-startBtn.addEventListener('click', () => {
+modo1Btn.addEventListener('click', () => {
+  gameConfig.gravity = 0.25;
+  gameConfig.lift = -7;
+  gameConfig.pipeSpeed = 2;
+  gameConfig.pipeFrameRate = 140;
+  startGame();
+});
+
+modo2Btn.addEventListener('click', () => {
+  gameConfig.gravity = 0.45;
+  gameConfig.lift = -9;
+  gameConfig.pipeSpeed = 4;
+  gameConfig.pipeFrameRate = 80;
+  startGame();
+});
+
+modo3Btn.addEventListener('click', () => {
+  gameConfig.gravity = 0.70;
+  gameConfig.lift = -11;
+  gameConfig.pipeSpeed = 8;
+  gameConfig.pipeFrameRate = 40;
+  startGame();
+});
+
+function startGame() {
+  maxScore = scoreInput.value ? parseInt(scoreInput.value) : 15;
   initGame();
   gameStarted = true;
   gameLoop();
-});
+}
 
 nextPageBtn.addEventListener('click', () => {
   window.location.href = "prueba2.html"; // cambia la URL
